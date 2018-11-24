@@ -41,7 +41,7 @@
 }
 
 
-  .container > div {
+  .container > div > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,18 +74,18 @@ html, body {
   margin-top: 20px;
 }
 
-.container > div:nth-child(1n) {
+.container > div > a:nth-child(1n) {
   background-color: #ffffff;	
 }
 
-.container > div:nth-child(3n) {
+.container > div > a:nth-child(3n) {
   background-color: #ffffff;
 }
 
-.container > div:nth-child(2n) {
+.container > div > a:nth-child(2n) {
       background-color: #ffffff;
 }
 
-.container > div:nth-child(4n) {
+.container > div > a:nth-child(4n) {
       background-color: #ffffff;
 }
