@@ -41,7 +41,7 @@
 }
 
 
-  .container > div > a {
+  .container > div > a > img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +49,12 @@
     color: #ffeead;
     margin-top: 10px;
 }
-.container > div > img > a {
+.container > div > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-img {
+img  {
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
