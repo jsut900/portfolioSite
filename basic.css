@@ -1,12 +1,15 @@
 .header {
   overflow: hidden;
-  background-color: #000000;
   padding: 20px 10px;
-  border-radius: 5px;
+  border-radius: px;
+}
+.header {
+  background-image: url("Portfolio_images/city.gif"); 
+  background-size: 1175px 300px;
 }
 .header a {
   float: left;
-  color: rgb(255, 255, 255);
+  color: rgb(109, 240, 255);
   text-align: center;
   padding: 22px;
   text-decoration: none; 
@@ -18,12 +21,13 @@
   font-size: 30px;
   font-weight: bold;
 }
-.header a:hover {
+/* .header a:hover {
   color: rgb(135, 177, 51);
+  
 }
 .header a.active {
-  color: rgb(135, 177, 51);
-}
+  color: rgb(58, 223, 151); }*/
+
 .header-right {
   float: right;
 }
@@ -37,9 +41,7 @@
     float: none;
   }
 }
-
-
-  .container > div  {
+ .container > div  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +56,7 @@
 }
 img{
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-    filter: gray; /* IE5+ */
+    filter: rgb(78, 78, 78); /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .2s ease-in;  
   }
@@ -66,7 +68,7 @@ img{
   }
 
 html, body {
-  background-color: #fbfbfb;
+  background-color: #000000;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 15px;
@@ -86,4 +88,35 @@ html, body {
 
 .container > div > a:nth-child(4n) {
       background-color: #ffffff;
+}
+.header {
+  animation: header 2s linear infinite;
+  -moz-animation: header 2s linear infinite;
+  -webkit-animation: header 2s linear infinite;
+  -o-animation: header 2s linear infinite;
+}
+
+@keyframes header {
+  0%,
+  100% {
+    text-shadow: 0 0 .1vw #1041FF, 0 0 1.5vw #1041FF, 0 0 5vw #1041FF, 0 0 5vw #1041FF, 0 0 .2vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .1vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+.header a.active {
+  animation: header 2s linear infinite;
+  -moz-animation: header 2s linear infinite;
+  -webkit-animation: header 2s linear infinite;
+  -o-animation: header 2s linear infinite;
+}
+.header a:hover {
+  animation: header 2s linear infinite;
+  -moz-animation: header 2s linear infinite;
+  -webkit-animation: header 2s linear infinite;
+  -o-animation: header 2s linear infinite;
+  color: #ffeead;
 }
